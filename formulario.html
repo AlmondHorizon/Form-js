@@ -28,20 +28,22 @@ return false;
     <title>Formulário</title>
 </head>
 <body>
+
+    <h1>Cadastre-se</h1>
+    <h6></h6>
     <form name="form1" action="#" method="post">
-        Nome:
-        <input name="nome" type="text"><br /><br />
         E-mail:
-        <input name="email" type="text"><br /><br />
-        Endereço:
-        <input name="endereco" type="text"><br /><br />
-        CEP:
-        <input name="cep" type="text"><br /><br />
+            <input name="email" type="text" placeholder="Ex: rafael.brito88@gmail.com" required=""><br /><br />
         Senha:
-        <input name="senha" type="password"><br /><br />
-        Repetir Senha:
-        <input name="rep_senha" type="password"><br /><br />
-        <input type="submit"  onclick="return validar()">
+            <input name="senha" type="password"><br /><br />
+        CPF:
+            <input name="cpf" type="text" placeholder="Ex: 735.579191-53" required="">&nbsp; Não é pessoa física?<br /><br/>
+        Seu nome:
+            <input name="nome" type="text" placeholder="Ex: Rafael" required=""><br /><br />
+        Telefone
+        <input name="telefone" type="text" placeholder="Ex: 61 98533-0333" required=""><br /><br />
+        <input type="checkbox" name="opcoes" value="html"/> Deseja receber informações por e-mail?<br /><br />
+        <input type="submit"  onclick="return validar()" value="Crie seu cadastro">
         </form>
 </body>
 </html>
